@@ -1,14 +1,106 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <title>Amazon Navbar</title>
 
+    <link rel="stylesheet" href="{% static 'css/navbar.css' %}">
 </head>
+
 <body>
-    <h1>Hello I am navbar</h1>
-    <i class="fa-solid fa-magnifying-glass"></i>
+
+    <!-- TOP NAVBAR -->
+    <nav class="navbar">
+
+        <!-- Logo -->
+        <div class="logo">
+            amazon<span>.in</span>
+            <div class="smile"></div>
+        </div>
+
+        <!-- Location -->
+        <div class="location">
+            <div class="location-icon">⌖</div>
+            <div>
+                <small>Delivering to Sonipat 131021</small>
+                <strong>Update location</strong>
+            </div>
+        </div>
+
+        <!-- Search -->
+        <div class="search-box">
+
+            <div class="category">
+                All
+                <span>▼</span>
+            </div>
+
+            <input type="text" placeholder="Search Amazon.in">
+
+            <button class="search-btn">⌕</button>
+
+        </div>
+
+        <!-- Language -->
+        <div class="language">
+            🇮🇳
+            <b>EN</b>
+            <span>▼</span>
+        </div>
+
+        <!-- Account -->
+        <div class="account">
+            <small>Hello, sign in</small>
+            <strong>Account & Lists <span>▼</span></strong>
+        </div>
+
+        <!-- Orders -->
+        <div class="orders">
+            <small>Returns</small>
+            <strong>& Orders</strong>
+        </div>
+
+        <!-- Cart -->
+        <div class="cart">
+            🛒
+            <span>0</span>
+            <b>Cart</b>
+        </div>
+
+    </nav>
+
+
+    <!-- SECOND NAVBAR -->
+    <div class="second-navbar">
+
+        <div class="menu">
+            ☰ <b>All</b>
+        </div>
+
+        <div>Amazon Pay</div>
+        <div>Mobiles</div>
+        <div>Today's Deals</div>
+        <div>Coupons</div>
+        <div>Flights</div>
+        <div>Electronics</div>
+        <div>Computers</div>
+        <div>New Releases</div>
+        <div>Bestsellers</div>
+        <div>Video Games</div>
+        <div>Fashion</div>
+
+        <div class="festival">
+            🌙
+            <b>Great Indian Festival | Shop early deals now</b>
+            <span>❯</span>
+        </div>
+
+    </div>
+
 </body>
+
 </html>
